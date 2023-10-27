@@ -1,0 +1,13 @@
+name: Validate
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+jobs:
+  validate:
+    uses: scarletcomply/customer-actions/.github/workflows/validate.yml@v1
+    secrets:
+      scarlet-token: ${{ secrets.SCARLET_TOKEN }}

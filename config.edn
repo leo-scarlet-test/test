@@ -1,0 +1,13 @@
+{:documents "conformers"
+ :specs [{:version "v0.2.0"
+          :url "git@github.com:scarletcomply/spec-customer-export.git"}]
+;; Uncomment when review is available
+;;  :review-customer {:version "<version>"
+;;                    :url "git@github.com:scarletcomply/<review-repo>-export.git"}
+ ;; Pre-application stage
+ :pre-application-stage 1
+ ;; Uncomment the following line and specify the risk class of the device once this device passed pre-application
+ ;: risk-classes #{"UKCA Class IIa", "CE Class IIb"}
+ :linters {:uncited-bibliography {:level :off}
+           :experimental-prev-links {:level :warning}
+           :duplicate-bibliography-reference {:level :off}}}
